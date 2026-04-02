@@ -6,8 +6,9 @@ public class Main {
         exercicio02();
         exercicio03();
         exercicio04();
-        exercicio05();*/
-        exercicio06();
+        exercicio05();
+        exercicio06();*/
+        exercicio07();
     }
 
     // 1. Par ou ímpar
@@ -106,4 +107,25 @@ public class Main {
 
         System.out.println("O maior número é: " + maior);
     }
+
+    public static void exercicio07() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite a nota (0 a 10): ");
+        int nota = sc.nextInt();
+
+        if (nota >= 0 && nota <= 4) {
+            System.out.println("Insuficiente");
+        } else if (nota <= 6) {
+            System.out.println("Regular");
+        } else if (nota <= 8) {
+            System.out.println("Bom");
+        } else if (nota <= 10) {
+            System.out.println("Excelente");
+        } else {
+            System.out.println("Nota inválida");
+        }
+    }
+
+    
 }
