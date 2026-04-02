@@ -20,8 +20,9 @@ public class Main {
         exercicio15();
         exercicio16();
         exercicio17();
-        exercicio18();*/
-        exercicio19();
+        exercicio18();
+        exercicio19();*/
+        exercicio20();
     }
 
     // 1. Par ou ímpar
@@ -390,5 +391,28 @@ public class Main {
         }
 
         System.out.println("IMC: " + imc);
+    }
+
+    public static void exercicio20() {
+        Scanner sc = new Scanner(System.in);
+
+        String senhaCorreta = "1234";
+        String senha;
+        int tentativas = 0;
+
+        while (tentativas < 3) {
+            System.out.print("Digite a senha: ");
+            senha = sc.nextLine();
+
+            if (senha.equals(senhaCorreta)) {
+                System.out.println("Acesso permitido");
+                return;
+            } else {
+                tentativas++;
+                System.out.println("Senha incorreta");
+            }
+        }
+
+        System.out.println("Acesso bloqueado");
     }
 }
