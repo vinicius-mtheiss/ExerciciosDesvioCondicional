@@ -16,8 +16,9 @@ public class Main {
         exercicio12();
         exercicio13();
         exercicio14();
-        exercicio15();*/
-        exercicio16();
+        exercicio15();
+        exercicio16();*/
+        exercicio17();
     }
 
     // 1. Par ou ímpar
@@ -322,6 +323,23 @@ public class Main {
             System.out.println("Recuperação");
         } else {
             System.out.println("Reprovado");
+        }
+    }
+
+    public static void exercicio17() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o salário: ");
+        double salario = sc.nextDouble();
+
+        System.out.print("Digite o valor da parcela: ");
+        double parcela = sc.nextDouble();
+
+        // Regra: parcela não pode ultrapassar 30% do salário
+        if (parcela <= salario * 0.30) {
+            System.out.println("Empréstimo aprovado");
+        } else {
+            System.out.println("Empréstimo negado");
         }
     }
 }
