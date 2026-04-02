@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         exercicio01();
         exercicio02();
+        exercicio03();
     }
 
     // 1. Par ou ímpar
@@ -38,5 +39,20 @@ public class Main {
         }
     }
 
+    public static void exercicio03() {
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Digite um número: ");
+        int numero = sc.nextInt();
+
+        if (numero > 0) {
+            System.out.println("Número POSITIVO");
+        } else if (numero < 0) {
+            System.out.println("Número NEGATIVO");
+        } else {
+            System.out.println("Número ZERO");
+        }
+    }
+
+    
 }
