@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        exercicio01();
+        /*exercicio01();
         exercicio02();
-        exercicio03();
+        exercicio03();*/
+        exercicio04();
     }
 
     // 1. Par ou ímpar
@@ -54,5 +55,16 @@ public class Main {
         }
     }
 
-    
+    public static void exercicio04() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite a nota (0 a 10): ");
+        double nota = sc.nextDouble();
+
+        if (nota >= 6) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
+    }
 }
