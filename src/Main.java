@@ -15,8 +15,9 @@ public class Main {
         exercicio11();
         exercicio12();
         exercicio13();
-        exercicio14();*/
-        exercicio15();
+        exercicio14();
+        exercicio15();*/
+        exercicio16();
     }
 
     // 1. Par ou ímpar
@@ -298,6 +299,29 @@ public class Main {
             System.out.println("Idoso");
         } else {
             System.out.println("Idade inválida");
+        }
+    }
+
+    public static void exercicio16() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite a nota 1: ");
+        double n1 = sc.nextDouble();
+
+        System.out.print("Digite a nota 2: ");
+        double n2 = sc.nextDouble();
+
+        System.out.print("Digite a nota 3: ");
+        double n3 = sc.nextDouble();
+
+        double media = (n1 + n2 + n3) / 3;
+
+        if (media >= 7) {
+            System.out.println("Aprovado");
+        } else if (media >= 5) {
+            System.out.println("Recuperação");
+        } else {
+            System.out.println("Reprovado");
         }
     }
 }
