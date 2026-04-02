@@ -10,8 +10,10 @@ public class Main {
         exercicio06();
         exercicio07();
         exercicio08();
-        exercicio09();*/
-        exercicio10();
+        exercicio09();
+        exercicio10();*/
+        exercicio11();
+        
     }
 
     // 1. Par ou ímpar
@@ -186,6 +188,19 @@ public class Main {
             System.out.println("Acesso permitido");
         } else {
             System.out.println("Acesso negado");
+        }
+    }
+
+    public static void exercicio11() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um ano: ");
+        int ano = sc.nextInt();
+
+        if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
+            System.out.println("Ano bissexto");
+        } else {
+            System.out.println("Ano não bissexto");
         }
     }
 }
