@@ -19,8 +19,9 @@ public class Main {
         exercicio14();
         exercicio15();
         exercicio16();
-        exercicio17();*/
-        exercicio18();
+        exercicio17();
+        exercicio18();*/
+        exercicio19();
     }
 
     // 1. Par ou ímpar
@@ -367,5 +368,27 @@ public class Main {
         System.out.println("Parabéns! Você acertou!");
     }
 
+    public static void exercicio19() {
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Digite o peso (kg): ");
+        double peso = sc.nextDouble();
+
+        System.out.print("Digite a altura (m): ");
+        double altura = sc.nextDouble();
+
+        double imc = peso / (altura * altura);
+
+        if (imc < 18.5) {
+            System.out.println("Baixo peso");
+        } else if (imc < 25) {
+            System.out.println("Peso normal");
+        } else if (imc < 30) {
+            System.out.println("Sobrepeso");
+        } else {
+            System.out.println("Obesidade");
+        }
+
+        System.out.println("IMC: " + imc);
+    }
 }
