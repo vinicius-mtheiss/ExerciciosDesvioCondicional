@@ -7,8 +7,9 @@ public class Main {
         exercicio03();
         exercicio04();
         exercicio05();
-        exercicio06();*/
-        exercicio07();
+        exercicio06();
+        exercicio07();*/
+        exercicio08();
     }
 
     // 1. Par ou ímpar
@@ -127,5 +128,24 @@ public class Main {
         }
     }
 
-    
+    public static void exercicio08() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o lado 1: ");
+        int a = sc.nextInt();
+
+        System.out.print("Digite o lado 2: ");
+        int b = sc.nextInt();
+
+        System.out.print("Digite o lado 3: ");
+        int c = sc.nextInt();
+
+        if (a + b > c && a + c > b && b + c > a) {
+            System.out.println("Formam um triângulo válido");
+        } else {
+            System.out.println("NÃO formam um triângulo");
+        }
+    }
+
+
 }
