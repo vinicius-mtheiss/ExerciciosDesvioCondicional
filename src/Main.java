@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -17,8 +18,9 @@ public class Main {
         exercicio13();
         exercicio14();
         exercicio15();
-        exercicio16();*/
-        exercicio17();
+        exercicio16();
+        exercicio17();*/
+        exercicio18();
     }
 
     // 1. Par ou ímpar
@@ -342,4 +344,28 @@ public class Main {
             System.out.println("Empréstimo negado");
         }
     }
+
+    public static void exercicio18() {
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+
+        int numeroSecreto = rand.nextInt(100) + 1;
+        int palpite;
+
+        do {
+            System.out.print("Digite um palpite (1 a 100): ");
+            palpite = sc.nextInt();
+
+            if (palpite < numeroSecreto) {
+                System.out.println("O número secreto é MAIOR");
+            } else if (palpite > numeroSecreto) {
+                System.out.println("O número secreto é MENOR");
+            }
+
+        } while (palpite != numeroSecreto);
+
+        System.out.println("Parabéns! Você acertou!");
+    }
+
+
 }
