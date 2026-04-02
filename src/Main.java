@@ -128,7 +128,7 @@ public class Main {
         System.out.print("Digite a nota (0 a 10): ");
         int nota = sc.nextInt();
 
-        if (nota >= 0 && nota <= 4) {
+        if (nota <= 4) {
             System.out.println("Insuficiente");
         } else if (nota <= 6) {
             System.out.println("Regular");
