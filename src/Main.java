@@ -13,8 +13,9 @@ public class Main {
         exercicio09();
         exercicio10();
         exercicio11();
-        exercicio12();*/
-        exercicio13();
+        exercicio12();
+        exercicio13();*/
+        exercicio14();
     }
 
     // 1. Par ou ímpar
@@ -256,5 +257,27 @@ public class Main {
         }
 
         System.out.println("Imposto a pagar: R$ " + imposto);
+    }
+
+    public static void exercicio14() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o valor da compra: ");
+        double valor = sc.nextDouble();
+
+        double desconto;
+
+        if (valor <= 100) {
+            desconto = 0;
+        } else if (valor <= 500) {
+            desconto = valor * 0.10;
+        } else {
+            desconto = valor * 0.20;
+        }
+
+        double valorFinal = valor - desconto;
+
+        System.out.println("Desconto: R$ " + desconto);
+        System.out.println("Valor final: R$ " + valorFinal);
     }
 }
