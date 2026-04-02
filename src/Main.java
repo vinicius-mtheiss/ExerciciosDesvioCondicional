@@ -4,8 +4,9 @@ public class Main {
     public static void main(String[] args) {
         /*exercicio01();
         exercicio02();
-        exercicio03();*/
-        exercicio04();
+        exercicio03();
+        exercicio04();*/
+        exercicio05();
     }
 
     // 1. Par ou ímpar
@@ -65,6 +66,19 @@ public class Main {
             System.out.println("Aprovado");
         } else {
             System.out.println("Reprovado");
+        }
+    }
+
+    public static void exercicio05() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite sua idade: ");
+        int idade = sc.nextInt();
+
+        if (idade >= 16) {
+            System.out.println("Pode votar");
+        } else {
+            System.out.println("Não pode votar");
         }
     }
 }
