@@ -5,8 +5,9 @@ public class Main {
         /*exercicio01();
         exercicio02();
         exercicio03();
-        exercicio04();*/
-        exercicio05();
+        exercicio04();
+        exercicio05();*/
+        exercicio06();
     }
 
     // 1. Par ou ímpar
@@ -80,5 +81,29 @@ public class Main {
         } else {
             System.out.println("Não pode votar");
         }
+    }
+
+    public static void exercicio06() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro número: ");
+        int n1 = sc.nextInt();
+
+        System.out.print("Digite o segundo número: ");
+        int n2 = sc.nextInt();
+
+        System.out.print("Digite o terceiro número: ");
+        int n3 = sc.nextInt();
+
+        int maior = n1;
+
+        if (n2 > maior) {
+            maior = n2;
+        }
+        if (n3 > maior) {
+            maior = n3;
+        }
+
+        System.out.println("O maior número é: " + maior);
     }
 }
