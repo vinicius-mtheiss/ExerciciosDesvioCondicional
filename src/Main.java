@@ -9,8 +9,9 @@ public class Main {
         exercicio05();
         exercicio06();
         exercicio07();
-        exercicio08();*/
-        exercicio09();
+        exercicio08();
+        exercicio09();*/
+        exercicio10();
     }
 
     // 1. Par ou ímpar
@@ -166,6 +167,25 @@ public class Main {
             System.out.println("Triângulo Isósceles");
         } else {
             System.out.println("Triângulo Escaleno");
+        }
+    }
+
+    public static void exercicio10() {
+        Scanner sc = new Scanner(System.in);
+
+        String usuarioCorreto = "admin";
+        String senhaCorreta = "1234";
+
+        System.out.print("Digite o usuário: ");
+        String usuario = sc.nextLine();
+
+        System.out.print("Digite a senha: ");
+        String senha = sc.nextLine();
+
+        if (usuario.equals(usuarioCorreto) && senha.equals(senhaCorreta)) {
+            System.out.println("Acesso permitido");
+        } else {
+            System.out.println("Acesso negado");
         }
     }
 }
