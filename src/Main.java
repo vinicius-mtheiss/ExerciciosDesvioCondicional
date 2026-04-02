@@ -8,8 +8,9 @@ public class Main {
         exercicio04();
         exercicio05();
         exercicio06();
-        exercicio07();*/
-        exercicio08();
+        exercicio07();
+        exercicio08();*/
+        exercicio09();
     }
 
     // 1. Par ou ímpar
@@ -147,5 +148,24 @@ public class Main {
         }
     }
 
+    public static void exercicio09() {
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Digite o lado 1: ");
+        int a = sc.nextInt();
+
+        System.out.print("Digite o lado 2: ");
+        int b = sc.nextInt();
+
+        System.out.print("Digite o lado 3: ");
+        int c = sc.nextInt();
+
+        if (a == b && b == c) {
+            System.out.println("Triângulo Equilátero");
+        } else if (a == b || a == c || b == c) {
+            System.out.println("Triângulo Isósceles");
+        } else {
+            System.out.println("Triângulo Escaleno");
+        }
+    }
 }
